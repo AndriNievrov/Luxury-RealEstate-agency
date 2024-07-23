@@ -1,0 +1,20 @@
+def show_faq(message):
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    button1 = types.KeyboardButton('⚙️ Про нас')
+    button2 = types.KeyboardButton('⚙️ Наша команда')
+    button3 = types.KeyboardButton('↩️ Назад в меню')
+    markup.row(button1, button2)
+    markup.row(button3)
+    bot.send_message(message.chat.id, 'Розділ налаштувань.\nВиберіть один з варіантів:', reply_markup=markup)
+
+
+def show_help(message):
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    button1 = types.KeyboardButton('✏️ Написати розробнику')
+    button2 = types.KeyboardButton('↩️ Назад в меню')
+    markup.row(button1, button2)
+    bot.send_message(message.chat.id, 'Розділ довідки. Тут ти можеш написати нашому агенту.', reply_markup=markup)
+
+
+# Keep the program running
+bot.polling(none_stop=True)
