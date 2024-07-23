@@ -1,0 +1,24 @@
+# Handler for the /start command
+@bot.message_handler(commands=['start'])
+def welcome(message):
+    # Create keyboard buttons that appear after entering the /start command
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    button1 = types.KeyboardButton('🏠 Орендувати житло')
+    button2 = types.KeyboardButton('⚙️ F.A.Q')
+    button3 = types.KeyboardButton('📄 Довідка')
+
+    # Separate product buttons from other buttons
+    markup.row(button1)
+    markup.row(button2, button3)
+
+    if message.text == '/start':
+        # Send a welcome message
+        bot.send_message(
+            message.chat.id,
+            f'Привіт, {message.from_user.first_name}!\n'
+            f'Ласкаво просимо до Luxury RealEstate Agency! За допомогою нашого сервісу ти можеш знайти та орендувати своє ідеальне житло.\n'
+            f'Контакт з нашим агентом: https://t.me/@femalebodyinspect0r',
+            reply_markup=markup
+        )
+    else:
+        bot.send_message(message.chat.id, 'Перекинув тебе у головне меню! Вибирай!', reply_markup=markup)
