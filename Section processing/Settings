@@ -14,7 +14,7 @@ def info(message):
     elif message.text == '⚙️ Наша команда':
         bot.send_message(message.chat.id, 'У нас працює команда професіоналів, які допоможуть вам знайти ідеальне житло.')
     elif message.text == '💳 Оформити замовлення' or message.text == '✏️ Написати розробнику':
-        webbrowser.open('https://t.me/foodeliveryy')
+        webbrowser.open('https://t.me/LuxuryRealEstate_bot')
     elif message.text == '↩️ Назад':
         show_properties(message)
     elif message.text == '↩️ Назад в меню':
