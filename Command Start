@@ -17,7 +17,7 @@ def welcome(message):
             message.chat.id,
             f'Привіт, {message.from_user.first_name}!\n'
             f'Ласкаво просимо до Luxury RealEstate Agency! За допомогою нашого сервісу ти можеш знайти та орендувати своє ідеальне житло.\n'
-            f'Контакт з нашим агентом: https://t.me/@femalebodyinspect0r',
+            f'Контакт з нашим агентом: https://t.me/LuxuryRealEstate_bot',
             reply_markup=markup
         )
     else:
