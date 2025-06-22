@@ -6,4 +6,4 @@
     elif message.text == '↩️ Назад в меню':
         welcome(message)
     else:
-        bot.send_message(message.chat.id, random.choice(answers))
+        bot.send_message(message.chat.id, random.choice(answers)).
