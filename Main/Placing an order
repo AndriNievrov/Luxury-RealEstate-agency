@@ -5,5 +5,5 @@
         markup.row(button1, button2)
         file = open(property_info['file'], 'rb')
         bot.send_photo(message.chat.id, file, reply_markup=markup)
-        bot.send_message(message.chat.id, property_info['details'], reply_markup=markup).
+        bot.send_message(message.chat.id, property_info['details'], reply_markup=markup)
 
