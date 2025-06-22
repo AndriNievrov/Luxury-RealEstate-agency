@@ -36,4 +36,4 @@ def show_properties(message):
     markup.row(button5)
 
     # Send a message with attached property buttons
-    bot.send_message(message.chat.id, 'Ось усі варіанти житла, яке зараз доступне для оренди:', reply_markup=markup).
+    bot.send_message(message.chat.id, 'Ось усі варіанти житла, яке зараз доступне для оренди:', reply_markup=markup)
