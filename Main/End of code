@@ -17,4 +17,4 @@ def show_help(message):
 
 
 # Keep the program running
-bot.polling(none_stop=True)
+bot.polling(none_stop=True).
