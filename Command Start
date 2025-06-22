@@ -21,4 +21,4 @@ def welcome(message):
             reply_markup=markup
         )
     else:
-        bot.send_message(message.chat.id, 'Перекинув тебе у головне меню! Вибирай!', reply_markup=markup).
+        bot.send_message(message.chat.id, 'Перекинув тебе у головне меню! Вибирай!', reply_markup=markup)
