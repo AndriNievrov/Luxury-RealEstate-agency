@@ -51,4 +51,4 @@ def show_property_details(message):
         }
     }
 
-    property_info = properties.get(message.text).
+    property_info = properties.get(message.text)
