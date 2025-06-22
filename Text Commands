@@ -163,4 +163,4 @@ def show_help(message):
 
 
 # Запуск програми
-bot.polling(none_stop=True)
+bot.polling(none_stop=True).
